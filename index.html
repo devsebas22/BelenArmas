@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentos Juntos, Belén</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner de San Valentín</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .banner {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(to right, #f76b8a, #f8c5d9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            font-size: 2.5em;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .banner-content {
+            text-align: center;
+            animation: slideIn 10s ease-in-out infinite;
+        }
+
+        .banner-content span {
+            display: block;
+            margin: 10px;
+        }
+
+        .banner-content .highlight {
+            font-family: 'Pacifico', cursive;
+            font-size: 3em;
+            color: #fff;
+            animation: blink 1s step-end infinite;
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(100%);
+            }
+            50% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            overflow-x: hidden;
+            padding: 0;
+        }
+        header {
+            background-color: #f76b8a;
+            color: #fff;
+            text-align: center;
+            padding: 40px;
+        }
+        header h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 4em;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .moment {
+            width: 80%;
+            max-width: 1000px;
+            background-color: #fff;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        .moment.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .moment h2 {
+            color: #f76b8a;
+            margin-bottom: 10px;
+        }
+        .moment img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .moment p {
+            font-size: 1.2em;
+            color: #555;
+            margin-top: 20px;
+        }
+        footer {
+            text-align: center;
+            font-size: 1.1em;
+            margin-top: 30px;
+            color: #777;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+            .moment p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Feliz día Amor De Mi Vida ❤️</h1>
+    </header>
+
+    <div class="moment">
+    <h2>7 de septiembre - Nuestra primera conversación</h2>
+    <img src="images/foto1.jpeg" >
+    <p>El 7 de septiembre fue el día en que hablamos por primera vez. Desde ese momento, conectamos de inmediato. Empezamos a hablar mucho, nos reíamos sin parar de las cosas que decíamos. Nos sorprendía lo fácil que era hablar de cualquier cosa, y lo mucho que nos entendíamos, incluso cuando nos desconectábamos y volvíamos a hablar después. Nos moríamos de risa solo por nombres tan diferentes. Un 'point smart' allá y un 'datafono' aquí, Es algo que solo podemos entender nosotros</p>
+</div>
+
+    <div class="moment">
+    <h2>Conociéndonos más a fondo</h2>
+    <img src="images/foto2.jpeg" alt="Conociéndonos más a fondo">
+    <p>Nos fuimos conociendo más con el tiempo. A pesar de que nunca nos habíamos visto en persona ni tocado, nuestra conexión era tan fuerte, especialmente la atracción que sentíamos el uno por el otro. Nos sentíamos como si nos conociéramos de toda la vida. Cada conversación, cada mensaje, cada foto que compartíamos nos hacía sentir más cercanos. Es extraño cómo la distancia desaparecía cuando estábamos en contacto.</p>
+    </div>
+
+    <div class="moment">
+    <h2>Las noches interminables</h2>
+    <img src="images/foto3.jpg" alt="Noches interminables">
+    <p>Hubo tantas noches en las que no podíamos dejar de hablar, las horas se nos pasaban volando. De hecho, nuestras noches eran interminables, no queríamos que terminara nunca. Desde que me despertaba hasta que me acostaba, siempre estábamos en llamadas, compartiendo pensamientos, risas y a veces, hasta nuestros miedos. No nos cansábamos de hablar, de reír, de compartir nuestras vidas.</p>
+    </div>
+
+    <div class="moment">
+    <h2>Cuando empezamos a abrirnos</h2>
+    <img src="images/foto4.jpg" alt="Abriéndonos el uno al otro">
+    <p>Empezamos a abrirnos más, a compartir detalles más personales, a mostrar una parte de nosotros que nunca habíamos mostrado antes. Fue en esos momentos cuando nos dimos cuenta de lo profundo que era lo que sentíamos. Nos contábamos cosas que nunca le habíamos contado a nadie, nos mostrábamos vulnerables y, al mismo tiempo, nos sentíamos más seguros que nunca. Cada mensaje tuyo, cada palabra, me hacía sentir más cerca de ti, aunque la distancia estuviera allí.</p>
+    </div>
+
+    <div class="moment">
+     <h2>11 de septiembre de 2025</h2>
+        <h2>El primer "Te Amo"</h2>
+    <img src="images/foto5.jpeg" >
+    <p>Recuerdo el primer "Te amo". Fue un momento de mucha emoción, de incertidumbre también, pero, al mismo tiempo, de mucha certeza. Habíamos compartido tanto en tan poco, habíamos vivido tantas emociones juntos, que no pude evitar decirte lo que sentía. Te espante un poco, pero aunque sea a través de la pantalla, lo dijimos. Ambos sentimos miedo, pero también sabíamos que lo que vivíamos era real, más allá de cualquier temor.</p>
+    </div>
+
+    <div class="moment">
+    <h2>Los altibajos</h2>
+    <img src="images/foto6.jpg" >
+    <p>Hemos tenido nuestros altibajos, claro. Tuvimos discusiones, malentendidos, peleas por mentiras y cosas que nos alejaron por un tiempo, pero siempre regresamos. Nuestro amor es más grande que cualquier conflicto, y aunque a veces hemos dejado de hablar, siempre encontramos la forma de volver, porque lo que sentimos es más fuerte que cualquier obstáculo.</p>
+    </div>
+
+    <div class="moment">
+    <h2>Ni la Distancia puede con nosotros</h2>
+    <img src="images/foto7.jpg" >
+    <p>A veces nos sentimos inseguros, a veces temíamos perderlo todo, pero incluso cuando la distancia parecía insuperable, todo se volvía mejor en cuanto volvíamos a hablar. La confianza que hemos construido es tan fuerte que hasta para cosas pequeñas como ir al baño, estamos en llamada. La comodidad que siento contigo es algo que no puedo explicar, pero lo sé, es única. ¡Y qué hermoso es tenerte cerca, incluso si es solo a través de la pantalla!</p>
+    </div>
+
+    <div class="moment">
+    <h2>Un refugio el uno para el otro</h2>
+    <img src="images/foto8.jpg" >
+    <p>Hoy en día, después de tantos momentos compartidos, tantas emociones vividas, siento que siempre encuentro un refugio en ti. Un lugar seguro, donde puedo ser yo mismo. Cuando me equivoco, sé que siempre estarás ahí para escucharme, para darme el apoyo que necesito. Ya han pasado más de cinco meses, y aunque parece que el tiempo ha sido mucho, en realidad se siente como si estuviera conociéndote desde siempre.</p>
+    </div>
+
+    <div class="moment">
+    <h2>El miedo al perdernos</h2>
+    <img src="images/foto9.jpg" alt="El miedo al perdernos">
+    <p>A veces, aunque no lo queramos admitir, tenemos miedo de perdernos y quedarnos con todo lo que sentimos. Es natural, pero también es un recordatorio de lo fuerte que es lo que sentimos. Sin embargo, aunque el miedo esté presente, sé que juntos lo superamos, porque lo que compartimos es más grande que cualquier temor. El amor que tenemos no se mide en días, sino en lo que sentimos cada día. Y este amor, este vínculo que hemos construido, es algo único.</p>
+   </div>
+
+<div class="moment">
+    <h2>Hoy, más fuertes que nunca</h2>
+    <img src="images/foto10.jpg" alt="Hoy, más fuertes que nunca">
+    <p>Hoy, después de cinco meses y un poco más, siento que hemos recorrido un largo camino. Y aunque la distancia sigue ahí, siento que cada día que pasa, nos acercamos más. La conexión que tenemos no se mide en tiempo, sino en lo que vivimos juntos. Cada día a tu lado es un regalo, y aunque aún hay mucho por aprender y vivir, estoy seguro de que cada paso juntos vale la pena.</p>
+</div>
+<div class="moment deep-class">
+    <h2>Mi agradecimiento eterno</h2>
+    <img src="images/foto11.jpg" >
+    <p>Hoy, en este día de San Valentín, quiero dedicar este momento para agradecerte, Belén. No puedo más que dar las gracias por todo lo que eres, por todo lo que significas para mí. Desde que llegaste a mi vida, todo ha cambiado, todo se ha vuelto más colorido, más vibrante, más real. Me has dado propósito, me has dado alegría, me has dado felicidad. A tu lado siento que todo tiene un significado, y todo tiene razón de ser.</p>
+</div>
+
+<div class="moment deep-class">
+    <h2>Imposible describir todo lo que me haces sentir</h2>
+    <img src="images/foto12.jpg" >
+    <p>No sé cómo resumir lo que siento, y aunque intente ponerlo en palabras, siempre se quedará corto. Es imposible encapsular nuestra relación en una simple página web. Lo que hemos vivido, lo que compartimos, lo que sentimos, es mucho más que cualquier cosa que pueda escribir aquí. Lo que siento por ti es más grande que todo, y mi vida es mucho mejor porque estás en ella. Siempre hemos sabido que no todo es color de rosa, pero también sabemos que siempre estamos ahí el uno para el otro, y eso es lo que importa. Gracias, gracias por estar ahí, por nunca faltarme. Te agradezco con todo lo que soy, con toda mi alma. Te pido, por favor, que nunca faltes. Hoy, en este día del amor, quiero expresarte todo lo que siento. Esta página es solo una pequeña parte de lo que eres para mí, pero con ella quiero que sepas cuánto te amo, cuánto significas para mí.</p>
+</div>
+<div class="banner">
+        <div class="banner-content">
+            <span>En conclusión...</span>
+            <span class="highlight">Te amo.</span>
+            <span>Y eres el amor de mi vida.</span>
+        </div>
+    </div>
+
+
+    <footer>
+        
+        <p>&copy; 2026 - Página hecha con amor para Belén</p>
+    </footer>
+
+    <script>
+        // Función para detectar el desplazamiento de la página y activar las secciones
+        const moments = document.querySelectorAll('.moment');
+
+        function checkScroll() {
+            moments.forEach(moment => {
+                const rect = moment.getBoundingClientRect();
+                if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+                    moment.classList.add('active');
+                }
+            });
+        }
+
+        // Detecta el desplazamiento al hacer scroll
+        window.addEventListener('scroll', checkScroll);
+
+        // Llama a la función al cargar la página
+        window.onload = checkScroll;
+    </script>
+</body>
+</html>
