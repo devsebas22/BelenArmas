@@ -7,142 +7,179 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        /* Reset básico y tipografía */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-            overflow-x: hidden;
-        }
+       /* Reseteo básico y tipografía */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        /* Encabezado */
-        header {
-            background-color: #f76b8a;
-            color: #fff;
-            text-align: center;
-            padding: 40px 20px; /* Margen lateral para móviles */
-        }
-        header h1 {
-            font-family: 'Pacifico', cursive;
-            font-size: 4em;
-        }
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 
-        /* Contenido de los momentos */
-        .content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-        }
-        .moment {
-            width: 80%;
-            max-width: 1000px;
-            background-color: #fff;
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.6s ease;
-        }
-        .moment.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .moment h2 {
-            color: #f76b8a;
-            margin-bottom: 10px;
-        }
-        .moment img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            margin-top: 20px;
-        }
-        .moment p {
-            font-size: 1.2em;
-            color: #555;
-            margin-top: 20px;
-        }
+/* Encabezado */
+header {
+    background-color: #f76b8a;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
 
-        /* Banner final */
-        .banner {
-            width: 100%;
-            height: 200px;
-            background: linear-gradient(to right, #f76b8a, #f8c5d9);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-family: 'Arial', sans-serif;
-            font-size: 2.5em;
-            overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-            margin-top: 40px;
-        }
-        .banner-content {
-            text-align: center;
-            animation: slideIn 10s ease-in-out infinite;
-        }
-        .banner-content span {
-            display: block;
-            margin: 10px;
-        }
-        .banner-content .highlight {
-            font-family: 'Pacifico', cursive;
-            font-size: 3em;
-            color: #fff;
-            animation: blink 1s step-end infinite;
-        }
+header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.5em;
+    line-height: 1.2;
+}
 
-        /* Animaciones */
-        @keyframes slideIn {
-            0% {
-                transform: translateX(100%);
-            }
-            50% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
-        }
+/* Contenido de los momentos */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
 
-        @keyframes blink {
-            50% {
-                opacity: 0;
-            }
-        }
+.moment {
+    width: 90%;  /* Reduce el ancho de los momentos */
+    max-width: 900px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
 
-        /* Media Queries para hacerlo responsive */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.5em;
-            }
-            .moment p {
-                font-size: 1em;
-            }
-            .banner {
-                height: 150px;
-            }
-            .banner-content {
-                font-size: 1.5em;
-            }
-        }
+.moment.active {
+    opacity: 1;
+    transform: translateY(0);
+}
 
-        /* Hacer que el contenido de las imágenes se ajuste en pantallas pequeñas */
-        @media (max-width: 480px) {
-            .moment img {
-                width: 100%;
-                height: auto;
-            }
-        }
+.moment h2 {
+    color: #f76b8a;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+.moment img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.moment p {
+    font-size: 1.1em;
+    color: #555;
+    margin-top: 20px;
+}
+
+/* Banner final */
+.banner {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to right, #f76b8a, #f8c5d9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5em;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+}
+
+.banner-content {
+    text-align: center;
+    animation: slideIn 10s ease-in-out infinite;
+}
+
+.banner-content span {
+    display: block;
+    margin: 10px;
+}
+
+.banner-content .highlight {
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    color: #fff;
+    animation: blink 1s step-end infinite;
+}
+
+/* Animaciones */
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Media Queries para hacerlo responsivo en dispositivos móviles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+    .moment p {
+        font-size: 1em;
+    }
+    .banner {
+        height: 150px;
+    }
+    .banner-content {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .moment {
+        width: 95%;  /* Para usar más espacio en pantallas pequeñas */
+        padding: 15px;  /* Ajuste de padding */
+    }
+
+    .moment h2 {
+        font-size: 1.6em;
+    }
+
+    .banner {
+        height: 130px;  /* Ajuste de altura del banner */
+    }
+
+    .banner-content {
+        font-size: 1.2em;
+    }
+
+    .moment p {
+        font-size: 0.9em;  /* Ajuste del texto para móviles */
+    }
+}
+
     </style>
 </head>
 <body>
